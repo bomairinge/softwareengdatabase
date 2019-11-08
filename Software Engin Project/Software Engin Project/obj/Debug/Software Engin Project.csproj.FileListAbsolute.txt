@@ -1,0 +1,64 @@
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+H:\2nd Year Comp Science\softwareengdatabase-master\Software Engin Project\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+K:\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+K:\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+K:\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+K:\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+K:\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+H:\2nd Year Comp Science\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+H:\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+H:\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+H:\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+H:\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+H:\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+H:\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
