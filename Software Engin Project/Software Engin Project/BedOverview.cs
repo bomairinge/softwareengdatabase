@@ -30,10 +30,16 @@ namespace Software_Engin_Project
             int employeeID = Convert.ToInt32(Constants.currentEmployee);
 
             DatabaseConnection.Sample.loginRecord(employeeID, time);
+
+            Login log = new Login();
+
+            log.Show();
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Management man = new Management();
 
             man.Show();

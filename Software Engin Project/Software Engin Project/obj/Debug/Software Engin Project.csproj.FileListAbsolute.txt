@@ -108,3 +108,18 @@ G:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Projec
 G:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
 G:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
 G:\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
