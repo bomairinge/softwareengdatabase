@@ -31,5 +31,12 @@ namespace Software_Engin_Project
         {
 
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            BedOverview bed = new BedOverview();
+
+            bed.Show();
+        }
     }
 }

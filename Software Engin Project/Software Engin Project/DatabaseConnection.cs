@@ -100,5 +100,22 @@ namespace Software_Engin_Project
             return noRows;
         }
 
+        public void loginRecord(int EmployeeID, string date)           
+        {
+            SqlCommand command = new SqlCommand();
+
+            command.CommandType = CommandType.Text;
+            command.CommandText = Constants.insertLogData;
+            command.Parameters.Add(new SqlParameter("EmployeeID", EmployeeID));
+            command.Parameters.Add(new SqlParameter("DateTime", date));
+
+            AccessDatabase();
+            command.Connection = sqlconnect;
+
+            int noRows = command.ExecuteNonQuery();
+
+            closedatabase();
+        }
+
     }
 }

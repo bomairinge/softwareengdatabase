@@ -21,5 +21,22 @@ namespace Software_Engin_Project
         {
 
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            string time = Constants.TimeStamp(DateTime.Now);
+
+            int employeeID = Convert.ToInt32(Constants.currentEmployee);
+
+            DatabaseConnection.Sample.loginRecord(employeeID, time);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Management man = new Management();
+
+            man.Show();
+        }
     }
 }

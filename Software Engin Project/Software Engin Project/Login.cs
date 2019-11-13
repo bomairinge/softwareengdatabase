@@ -43,9 +43,18 @@ namespace Software_Engin_Project
            */
               if(rows==1)
             {
-                this.Hide(); 
-                BedOverview bed = new BedOverview(); 
-                bed.Show(); 
+                this.Hide();
+
+                string time = Constants.TimeStamp(DateTime.Now);
+
+                int employeeID = Convert.ToInt32(textBox1.Text);
+                Constants.currentEmployee = textBox1.Text;
+
+                DatabaseConnection.Sample.loginRecord(employeeID, time);
+
+                BedOverview bed = new BedOverview();
+
+                bed.Show();
             }
             else
             {

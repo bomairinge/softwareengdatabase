@@ -26,5 +26,26 @@ namespace Software_Engin_Project
         {
 
         }
+
+        private void Management_Load(object sender, EventArgs e)
+        {
+            populateLoginData();
+        }
+
+        public void populateLoginData()
+        {
+            DataSet loginDataSet = DatabaseConnection.Sample.createDataSet("SELECT * FROM Login_data");
+
+            DataTable table = loginDataSet.Tables[0];
+
+            dataGridView1.DataSource = table;
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            BedOverview bed = new BedOverview();
+
+            bed.Show();
+        }
     }
 }
