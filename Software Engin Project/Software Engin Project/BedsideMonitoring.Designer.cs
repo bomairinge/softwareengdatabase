@@ -276,6 +276,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BedsideMonitoring";
             this.Text = "BedsideMonitoring";
+            this.Load += new System.EventHandler(this.BedsideMonitoring_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -73,6 +73,10 @@
     <Compile Include="BedsideMonitoring.Designer.cs">
       <DependentUpon>BedsideMonitoring.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bed.cs" />
+    <Compile Include="Modules.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="RunningData.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Login.cs">
@@ -94,6 +98,12 @@
     </Compile>
     <Compile Include="Set Alarms.Designer.cs">
       <DependentUpon>Set Alarms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testform.Designer.cs">
+      <DependentUpon>Testform.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BedOverview.resx">
       <DependentUpon>BedOverview.cs</DependentUpon>
@@ -119,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="Set Alarms.resx">
       <DependentUpon>Set Alarms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testform.resx">
+      <DependentUpon>Testform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
