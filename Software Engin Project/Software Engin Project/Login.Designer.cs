@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LoginAlarmPic1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Login_Button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -69,16 +69,16 @@
             this.LoginAlarmPic1.TabIndex = 2;
             this.LoginAlarmPic1.TabStop = false;
             // 
-            // button1
+            // Login_Button
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.button1.Location = new System.Drawing.Point(362, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.Login_Button.Location = new System.Drawing.Point(362, 311);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.Size = new System.Drawing.Size(111, 53);
+            this.Login_Button.TabIndex = 3;
+            this.Login_Button.Text = "Log In";
+            this.Login_Button.UseVisualStyleBackColor = true;
+            this.Login_Button.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -125,7 +125,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Login_Button);
             this.Controls.Add(this.LoginAlarmPic1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,7 +143,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox LoginAlarmPic1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Login_Button;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;

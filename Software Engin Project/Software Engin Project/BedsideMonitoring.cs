@@ -43,5 +43,11 @@ namespace Software_Engin_Project
 
             bed.Show();
         }
+
+        private void BedsideMonitoring_Load(object sender, EventArgs e)
+        {
+            //create the objects of Module class
+            //call a method that generates randomly numbers for the modules and check them against the limits
+        }
     }
 }

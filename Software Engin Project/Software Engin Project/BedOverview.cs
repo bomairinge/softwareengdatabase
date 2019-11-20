@@ -44,5 +44,18 @@ namespace Software_Engin_Project
 
             man.Show();
         }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BedsideMonitoring bed = new BedsideMonitoring();
+            Constants.currentBed = 0;
+            bed.Show();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

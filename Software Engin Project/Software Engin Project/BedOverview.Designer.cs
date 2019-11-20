@@ -95,6 +95,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(161, 85);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -196,6 +197,7 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Bed 2";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -245,7 +247,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Bed 2";
+            this.label7.Text = "Bed 1";
             // 
             // label8
             // 
