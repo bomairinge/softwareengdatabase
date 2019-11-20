@@ -13,7 +13,6 @@ namespace Software_Engin_Project
 {
     public partial class Login : Form
     {
-
         public Login()
         {
             InitializeComponent();
@@ -60,6 +59,18 @@ namespace Software_Engin_Project
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void LoginAlarmPic1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        public void AlarmsShow()
+        {
+            if (RunningData.alarm == true)
+            {
+                LoginAlarmPic1.Show();
+            }
         }
     }
 }

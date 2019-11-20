@@ -11,10 +11,10 @@ namespace Software_Engin_Project
         private int patientID;
         private string firstName;
         private string lastName;
-        private double pulse;
-        private double breathing;
-        private double blood;
-        private double temp;
+        private decimal pulse;
+        private decimal breathing;
+        private decimal blood;
+        private decimal temp;
         public int PatientID
         {
             get
@@ -48,7 +48,7 @@ namespace Software_Engin_Project
                 lastName = value;
             }
         }
-        public double Pulse
+        public decimal Pulse
         {
             get
             {
@@ -59,7 +59,7 @@ namespace Software_Engin_Project
                 pulse = value;
             }
         }
-        public double Breathing
+        public decimal Breathing
         {
             get
             {
@@ -70,7 +70,7 @@ namespace Software_Engin_Project
                 breathing = value;
             }
         }
-        public double Blood
+        public decimal Blood
         {
             get
             {
@@ -81,7 +81,7 @@ namespace Software_Engin_Project
                 blood = value;
             }
         }
-        public double Temp
+        public decimal Temp
         {
             get
             {

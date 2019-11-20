@@ -11,11 +11,12 @@ namespace Software_Engin_Project
     {
         private int moduleID;
         private string moduleName;
-		//>>CL
-		private double lowerLimit;
-		private double upperLimit;
-		//<<CL     
-        public double Lowerlimit
+        private decimal lowerLimit;
+        private decimal upperLimit;
+        
+        
+        
+        public decimal Lowerlimit
         {
             get
             {
@@ -26,7 +27,7 @@ namespace Software_Engin_Project
                 lowerLimit = value;
             }
         }
-        public double Upperlimit
+        public decimal Upperlimit
         {
             get
             {

@@ -127,6 +127,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(161, 85);
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // pictureBox6
             // 
@@ -484,6 +485,7 @@
             this.Controls.Add(this.label1);
             this.Name = "BedOverview";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.BedOverview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

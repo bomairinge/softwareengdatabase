@@ -1,0 +1,17 @@
+K:\Software Engin Project\Software Engin Project\bin\Release\Bedside_Database.mdf
+K:\Software Engin Project\Software Engin Project\bin\Release\Bedside_Database_log.ldf
+K:\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.exe.config
+K:\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.exe
+K:\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.pdb
+K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csprojAssemblyReference.cache
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.BedOverview.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.BedsideMonitoring.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Login.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Management.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Properties.Resources.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Set_Alarms.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Testform.resources
+K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csproj.GenerateResource.cache
+K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csproj.CoreCompileInputs.cache
+K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.exe
+K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.pdb

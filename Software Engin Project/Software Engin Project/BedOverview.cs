@@ -57,5 +57,15 @@ namespace Software_Engin_Project
         {
 
         }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BedOverview_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

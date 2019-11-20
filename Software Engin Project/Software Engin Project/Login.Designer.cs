@@ -68,6 +68,7 @@
             this.LoginAlarmPic1.Size = new System.Drawing.Size(114, 98);
             this.LoginAlarmPic1.TabIndex = 2;
             this.LoginAlarmPic1.TabStop = false;
+            this.LoginAlarmPic1.Click += new System.EventHandler(this.LoginAlarmPic1_Click);
             // 
             // Login_Button
             // 

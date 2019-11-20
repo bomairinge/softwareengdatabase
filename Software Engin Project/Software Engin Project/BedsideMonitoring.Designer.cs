@@ -48,6 +48,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.PulseText = new System.Windows.Forms.TextBox();
+            this.BreathingText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,6 +77,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(127, 274);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -249,11 +252,29 @@
             this.label10.TabIndex = 19;
             this.label10.Text = "John Smith";
             // 
+            // PulseText
+            // 
+            this.PulseText.Location = new System.Drawing.Point(48, 248);
+            this.PulseText.Name = "PulseText";
+            this.PulseText.Size = new System.Drawing.Size(100, 20);
+            this.PulseText.TabIndex = 20;
+            this.PulseText.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
+            // BreathingText
+            // 
+            this.BreathingText.Location = new System.Drawing.Point(255, 248);
+            this.BreathingText.Name = "BreathingText";
+            this.BreathingText.Size = new System.Drawing.Size(100, 20);
+            this.BreathingText.TabIndex = 21;
+            this.BreathingText.TextChanged += new System.EventHandler(this.BreathingText_TextChanged);
+            // 
             // BedsideMonitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BreathingText);
+            this.Controls.Add(this.PulseText);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button5);
@@ -309,5 +330,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox PulseText;
+        private System.Windows.Forms.TextBox BreathingText;
     }
 }

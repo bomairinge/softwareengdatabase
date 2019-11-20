@@ -16,7 +16,7 @@ namespace Software_Engin_Project
 
         private DataSet modules = DatabaseConnection.Sample.createDataSet("select * FROM Modules");
 
-        public Bed()
+        public  Bed()
         {
             moduleList = new List<Modules>();
 
@@ -28,8 +28,8 @@ namespace Software_Engin_Project
                     Modules m = new Modules();
                     m.ModuleID = row.Field<int>("Module_ID");
                     m.Modulename = row.Field<string>("Module_Name");
-                    m.Lowerlimit = row.Field<double>("Lower");
-                    m.Upperlimit = row.Field<double>("Upper");
+                    m.Lowerlimit = row.Field<decimal>("Lower");
+                    m.Upperlimit = row.Field<decimal>("Upper");
                     moduleList.Add(m);
                     
                 }
