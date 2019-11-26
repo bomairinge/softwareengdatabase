@@ -138,6 +138,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(161, 85);
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -148,6 +149,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(161, 85);
             this.pictureBox7.TabIndex = 9;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.PictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -158,6 +160,7 @@
             this.pictureBox8.Size = new System.Drawing.Size(161, 85);
             this.pictureBox8.TabIndex = 10;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.PictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -168,6 +171,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(161, 85);
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.PictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -178,6 +182,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(161, 85);
             this.pictureBox10.TabIndex = 12;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.PictureBox10_Click);
             // 
             // pictureBox11
             // 
@@ -188,6 +193,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(161, 85);
             this.pictureBox11.TabIndex = 13;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.PictureBox11_Click);
             // 
             // label2
             // 
@@ -208,7 +214,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Bed 2";
+            this.label3.Text = "Bed 5";
             // 
             // label4
             // 
@@ -218,7 +224,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Bed 2";
+            this.label4.Text = "Bed 8";
             // 
             // label5
             // 
@@ -228,7 +234,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Bed 2";
+            this.label5.Text = "Bed 6";
             // 
             // label6
             // 
@@ -238,7 +244,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Bed 2";
+            this.label6.Text = "Bed 7";
             // 
             // label7
             // 
@@ -258,7 +264,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Bed 2";
+            this.label8.Text = "Bed 4";
             // 
             // label9
             // 
@@ -268,7 +274,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 21;
-            this.label9.Text = "Bed 2";
+            this.label9.Text = "Bed 3";
             // 
             // label10
             // 

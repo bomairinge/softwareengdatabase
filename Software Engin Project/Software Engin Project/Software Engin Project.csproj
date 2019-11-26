@@ -76,6 +76,7 @@
     <Compile Include="Bed.cs" />
     <Compile Include="Modules.cs" />
     <Compile Include="Patient.cs" />
+    <Compile Include="RandomNum.cs" />
     <Compile Include="RunningData.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DatabaseConnection.cs" />

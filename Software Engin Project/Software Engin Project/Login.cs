@@ -25,14 +25,13 @@ namespace Software_Engin_Project
 
         private void Button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             int rows = DatabaseConnection.Sample.getSelectCount("Select Count(*) from Employee where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'");
 
-=======
             
-            int rows = DatabaseConnection.Sample.getSelectCount("Select Count(*) from Employee where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'");
+            
            
->>>>>>> 48b356b585f6d377be0360658436d1668c6042c3
+
               if(rows==1)
             {
                 this.Hide();
@@ -51,12 +50,12 @@ namespace Software_Engin_Project
             else
             {
                 // Initialises message box variables
-                string message = "No Username or Password found with those credentials. Retry?";
-                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                DialogResult result;
+                //string message = "No Username or Password found with those credentials. Retry?";
+                //MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                //DialogResult result;
 
                 // Displays message box
-                result = Messagebox.Show("");
+                //result = Messagebox.Show("");
             } 
         }
 
@@ -64,6 +63,7 @@ namespace Software_Engin_Project
         {
             LoginAlarmPic1.Hide();
             RunningData run = new RunningData();
+
             
         }
 

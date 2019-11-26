@@ -48,8 +48,9 @@ namespace Software_Engin_Project
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             this.Hide();
+
             BedsideMonitoring bed = new BedsideMonitoring();
-            Constants.currentBed = 0;
+            
             bed.Show();
         }
 
@@ -60,12 +61,70 @@ namespace Software_Engin_Project
 
         private void PictureBox4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Constants.currentBed = 1;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
         }
 
         private void BedOverview_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureBox11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 2;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
+        }
+
+        private void PictureBox10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 3;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
+        }
+
+        private void PictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 4;
+            BedsideMonitoring bed = new BedsideMonitoring();
+           
+            bed.Show();
+        }
+
+        private void PictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 5;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 6;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
+        }
+
+        private void PictureBox7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Constants.currentBed = 7;
+            BedsideMonitoring bed = new BedsideMonitoring();
+            
+            bed.Show();
         }
     }
 }

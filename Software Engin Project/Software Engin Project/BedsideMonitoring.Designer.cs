@@ -47,9 +47,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Namelabel = new System.Windows.Forms.Label();
             this.PulseText = new System.Windows.Forms.TextBox();
             this.BreathingText = new System.Windows.Forms.TextBox();
+            this.Bloodtext = new System.Windows.Forms.TextBox();
+            this.TempText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -242,15 +244,16 @@
             this.pictureBox5.TabIndex = 18;
             this.pictureBox5.TabStop = false;
             // 
-            // label10
+            // Namelabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(356, 55);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 20);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "John Smith";
+            this.Namelabel.AutoSize = true;
+            this.Namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelabel.Location = new System.Drawing.Point(356, 55);
+            this.Namelabel.Name = "Namelabel";
+            this.Namelabel.Size = new System.Drawing.Size(93, 20);
+            this.Namelabel.TabIndex = 19;
+            this.Namelabel.Text = "John Smith";
+            this.Namelabel.Click += new System.EventHandler(this.Label10_Click);
             // 
             // PulseText
             // 
@@ -262,20 +265,36 @@
             // 
             // BreathingText
             // 
-            this.BreathingText.Location = new System.Drawing.Point(255, 248);
+            this.BreathingText.Location = new System.Drawing.Point(250, 248);
             this.BreathingText.Name = "BreathingText";
             this.BreathingText.Size = new System.Drawing.Size(100, 20);
             this.BreathingText.TabIndex = 21;
             this.BreathingText.TextChanged += new System.EventHandler(this.BreathingText_TextChanged);
+            // 
+            // Bloodtext
+            // 
+            this.Bloodtext.Location = new System.Drawing.Point(464, 248);
+            this.Bloodtext.Name = "Bloodtext";
+            this.Bloodtext.Size = new System.Drawing.Size(100, 20);
+            this.Bloodtext.TabIndex = 22;
+            // 
+            // TempText
+            // 
+            this.TempText.Location = new System.Drawing.Point(647, 248);
+            this.TempText.Name = "TempText";
+            this.TempText.Size = new System.Drawing.Size(100, 20);
+            this.TempText.TabIndex = 23;
             // 
             // BedsideMonitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TempText);
+            this.Controls.Add(this.Bloodtext);
             this.Controls.Add(this.BreathingText);
             this.Controls.Add(this.PulseText);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Namelabel);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label9);
@@ -329,8 +348,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.TextBox PulseText;
         private System.Windows.Forms.TextBox BreathingText;
+        private System.Windows.Forms.TextBox Bloodtext;
+        private System.Windows.Forms.TextBox TempText;
     }
 }

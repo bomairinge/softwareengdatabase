@@ -200,3 +200,26 @@ D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources

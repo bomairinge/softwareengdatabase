@@ -13,12 +13,11 @@ namespace Software_Engin_Project
 {
     public partial class BedsideMonitoring : Form
     {
-        public static string pulse;
         public static void ThreadProc()
         {
             for (int i = 0; i < 999999; i++)
             {
-                pulse = RunningData.beds[0].currentPatient.Pulse.ToString("00.00");
+                
                 // Yield the rest of the time slice.
                 Thread.Sleep(0);
             }
@@ -28,13 +27,64 @@ namespace Software_Engin_Project
             Thread t = new Thread(new ThreadStart(ThreadProc));
             t.Start();
             InitializeComponent();
+            if (RunningData.beds[Constants.currentBed].currentPatient == null)
+            {
+                Namelabel.Text = "No Patient";
+                return;
+            }
+            else
+            {
+                string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
+                string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
+                Namelabel.Text =   FirstName + LastName;
 
-            
-            PulseText.Text = pulse;
-            string pulse1 = RunningData.beds[1].currentPatient.Pulse.ToString("00.00");
-            BreathingText.Text = pulse1;
+                Thread thr = new Thread(new ThreadStart(AssignVitals));
+                thr.Start();
+                
+            }            
 
         }
+        public void AssignVitals()
+        {
+            for (int i = 0; i < 99999999; i++)
+            {
+                if (RunningData.beds[Constants.currentBed].currentPatient == null)
+                {
+                    break;
+                }
+                else
+                {
+
+                    string pulse = RunningData.beds[Constants.currentBed].currentPatient.Pulse.ToString("00.00");
+                    if (PulseText.InvokeRequired)
+                        this.Invoke(new MethodInvoker(() => PulseText.Text = pulse));
+                    else
+                        PulseText.Text = pulse;
+
+                    string breath = RunningData.beds[Constants.currentBed].currentPatient.Breathing.ToString("00.00");
+                    if (PulseText.InvokeRequired)
+                        this.Invoke(new MethodInvoker(() => BreathingText.Text = breath));
+                    else
+                        BreathingText.Text = breath;
+
+                    string temp = RunningData.beds[Constants.currentBed].currentPatient.Temp.ToString("00.00");
+                    if (TempText.InvokeRequired)
+                        this.Invoke(new MethodInvoker(() => TempText.Text = temp));
+                    else
+                        TempText.Text = pulse;
+
+                    string blood = RunningData.beds[Constants.currentBed].currentPatient.Blood.ToString("00.00");
+                    if (Bloodtext.InvokeRequired)
+                        this.Invoke(new MethodInvoker(() => Bloodtext.Text = blood));
+                    else
+                        Bloodtext.Text = pulse;
+
+                    Thread.Sleep(0);
+                }
+            }
+        }
+
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -58,6 +108,8 @@ namespace Software_Engin_Project
 
         private void Button5_Click(object sender, EventArgs e)
         {
+            
+            this.Hide();
             BedOverview bed = new BedOverview();
 
             bed.Show();
@@ -80,6 +132,11 @@ namespace Software_Engin_Project
         }
 
         private void BreathingText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label10_Click(object sender, EventArgs e)
         {
 
         }

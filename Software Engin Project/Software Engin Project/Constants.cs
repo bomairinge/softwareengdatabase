@@ -9,12 +9,6 @@ namespace Software_Engin_Project
 {
     class Constants
     {
-        //static Random rng = new Random();
-
-        //private Timer timer;
-
-        //public static decimal pulseRng, tempRng, breathingRng, bloodRng;
-
         public static string currentEmployee;
 
         public static int currentBed;
@@ -24,13 +18,5 @@ namespace Software_Engin_Project
         }
         public static string insertLogData = "INSERT INTO Login_data (Employee_ID, Login_DateTime) VALUES (@EmployeeID, @DateTime)";
               
-        /*public void AlarmRandoms()
-        {
-            pulseRng = rng.Next(0, 75);
-            tempRng = rng.Next(0, 75);
-            breathingRng = rng.Next(0, 75);
-            bloodRng = rng.Next(0, 75);
-
-        }*/
-    }
+        }
 }

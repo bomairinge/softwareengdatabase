@@ -13,8 +13,7 @@ namespace Software_Engin_Project
         public static Bed[] beds;
         public static List<Patient> patients;
         public static bool alarm = false;
-        public static Random rng = new Random();
-
+        
         private static Timer timer;
 
         public DataSet patient = DatabaseConnection.Sample.createDataSet("select * FROM Patient");
@@ -90,7 +89,7 @@ namespace Software_Engin_Project
         private static void Run()
         {
             timer = new Timer();
-            timer.Interval = 5000;
+            timer.Interval = 1000;
             timer.AutoReset = true;
             timer.Elapsed += AlarmData;
             timer.Enabled = true;
@@ -98,17 +97,16 @@ namespace Software_Engin_Project
 
         }
         static void AlarmData(object sender, ElapsedEventArgs e)
-        {
-            //decimal pulseRng, tempRng, breathingRng, bloodRng;
-           
-            decimal pulseRng = rng.Next(0, 75);
-            decimal tempRng = rng.Next(0, 75);
-            decimal breathingRng = rng.Next(0, 75);
-            decimal bloodRng = rng.Next(0, 75);
+        {      
+            
+            int pulseRng = RandomNum.NextRandom();
+            int tempRng = RandomNum.NextRandom();
+            int breathingRng = RandomNum.NextRandom();
+            int bloodRng = RandomNum.NextRandom();
 
             for (int i = 0; i <= patients.Count; i++)
             {
-                if (beds[i].BedAvailable() == false)
+                if (beds[i].currentPatient == null)
                 {
                     return;
                 }
@@ -120,31 +118,31 @@ namespace Software_Engin_Project
                     beds[i].currentPatient.Breathing = breathingRng;
                     beds[i].currentPatient.Blood = bloodRng;
 
-                    for (int j = 0; j < beds[i].moduleList.Count; i++)
+                    /*for (int j = 0; j < beds[i].moduleList.Count; i++)
                     {
 
                         if (beds[i].currentPatient.Pulse > beds[i].moduleList[j].Upperlimit || beds[i].currentPatient.Pulse < beds[i].moduleList[j].Lowerlimit) 
                         {
                             alarm = true;
                         }
-                        //else if (beds[i].currentPatient.Temp > currentModule.Upperlimit || beds[i].currentPatient.Temp < currentModule.Lowerlimit)
-                       // {
+                        else if (beds[i].currentPatient.Temp > currentModule.Upperlimit || beds[i].currentPatient.Temp < currentModule.Lowerlimit)
+                        {
 
-                       // }
-                        //else if (beds[i].currentPatient.Breathing > currentModule.Upperlimit || beds[i].currentPatient.Breathing < currentModule.Lowerlimit)
-                        //{
+                        }
+                        else if (beds[i].currentPatient.Breathing > currentModule.Upperlimit || beds[i].currentPatient.Breathing < currentModule.Lowerlimit)
+                        {
 
-                        //}
-                       // else if (beds[i].currentPatient.Blood > currentModule.Upperlimit || beds[i].currentPatient.Blood < currentModule.Lowerlimit)
-                       // {
+                        }
+                        else if (beds[i].currentPatient.Blood > currentModule.Upperlimit || beds[i].currentPatient.Blood < currentModule.Lowerlimit)
+                        {
 
-                       // }
+                        }
                         else
                         {
                             return;
                         }
 
-                    }
+                    }*/
 
 
                 }
