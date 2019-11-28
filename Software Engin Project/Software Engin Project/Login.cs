@@ -49,13 +49,7 @@ namespace Software_Engin_Project
             }
             else
             {
-                // Initialises message box variables
-                //string message = "No Username or Password found with those credentials. Retry?";
-                //MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                //DialogResult result;
-
-                // Displays message box
-                //result = Messagebox.Show("");
+                MessageBox.Show("No user with these credentials.");
             } 
         }
 
