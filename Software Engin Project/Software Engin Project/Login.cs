@@ -50,11 +50,13 @@ namespace Software_Engin_Project
             }
             else
             {
-                // Initialises message box variables
+
 
 
                 // Displays message box
                 MessageBox.Show("No Username or Password found with those credentials.");
+
+                MessageBox.Show("No user with these credentials.");
             } 
         }
 
