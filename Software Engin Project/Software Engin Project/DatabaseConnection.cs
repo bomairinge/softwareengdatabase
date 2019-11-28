@@ -18,8 +18,8 @@ namespace Software_Engin_Project
 
         private static SqlConnection sqlconnect;
 
-         private static SqlDataAdapter sqladapt;
-
+        private static SqlDataAdapter sqladapt;
+            
         public static DatabaseConnection Sample
         {
             get
@@ -103,11 +103,32 @@ namespace Software_Engin_Project
         public void loginRecord(int EmployeeID, string date)           
         {
             SqlCommand command = new SqlCommand();
+            string insertLogData = "INSERT INTO Login_data (Employee_ID, Login_DateTime) VALUES (@EmployeeID, @DateTime)";
 
             command.CommandType = CommandType.Text;
-            command.CommandText = Constants.insertLogData;
+            command.CommandText = insertLogData;
             command.Parameters.Add(new SqlParameter("EmployeeID", EmployeeID));
             command.Parameters.Add(new SqlParameter("DateTime", date));
+
+            AccessDatabase();
+            command.Connection = sqlconnect;
+
+            int noRows = command.ExecuteNonQuery();
+
+            closedatabase();
+        }
+        public void alarmRecord(int EmployeeID, int ModuleID, int BedID, string alarmdate, string mutedTime)
+        {
+            SqlCommand command = new SqlCommand();
+            string insertLogData = "INSERT INTO Alarms (Employee_ID, Module_ID, Bed_ID, Alarm_DateTime, Muted_DateTime) VALUES (@EmployeeID, @ModuleID, @BedID, @DateTime, @MutedDateTime)";
+
+            command.CommandType = CommandType.Text;
+            command.CommandText = insertLogData;
+            command.Parameters.Add(new SqlParameter("EmployeeID", EmployeeID));
+            command.Parameters.Add(new SqlParameter("ModuleID", ModuleID));
+            command.Parameters.Add(new SqlParameter("DateTime", alarmdate));
+            command.Parameters.Add(new SqlParameter("BedID", BedID));
+            command.Parameters.Add(new SqlParameter("mutedDateTime", mutedTime));
 
             AccessDatabase();
             command.Connection = sqlconnect;

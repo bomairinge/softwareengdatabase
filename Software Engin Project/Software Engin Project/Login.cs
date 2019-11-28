@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace Software_Engin_Project
 {
@@ -50,21 +51,57 @@ namespace Software_Engin_Project
             else
             {
                 // Initialises message box variables
-                //string message = "No Username or Password found with those credentials. Retry?";
-                //MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                //DialogResult result;
+
 
                 // Displays message box
-                //result = Messagebox.Show("");
+                MessageBox.Show("No Username or Password found with those credentials.");
             } 
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            LoginAlarmPic1.Hide();
+            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
+            AlarmPic1.Hide();
+
             RunningData run = new RunningData();
 
+            Thread loginthr = new Thread(new ThreadStart(PatientVitals));
+            loginthr.Start();
             
+        }
+        public void PatientVitals()
+        {
+            for (int i = 0; i < 999999999; i++)
+            {
+                RunningData.AlarmData();
+                AlarmsShow();
+
+                if(RunningData.alarm == true)
+                {
+                    string time = Constants.TimeStamp(DateTime.Now);
+
+                    int employeeID = Convert.ToInt32(Constants.currentEmployee);
+                    int ModuleID = Convert.ToInt32(Constants.alarmingModule);
+                    int BedID = Convert.ToInt32(Constants.alarmingBed+1);
+                    
+                    
+
+                    DialogResult result = MessageBox.Show("Patient: " + RunningData.beds[Constants.alarmingBed].currentPatient.Firstname + " " + 
+                    RunningData.beds[Constants.alarmingBed].currentPatient.LastName + "\nBed: " + (Constants.alarmingBed + 1) + "\nMute Alarm?"
+                    , caption:"Alarm" , MessageBoxButtons.OK);
+
+                    if (result == DialogResult.OK)
+                    {
+                        string mutedTime = Constants.TimeStamp(DateTime.Now);
+
+                        //Create initial alarm record
+                        DatabaseConnection.Sample.alarmRecord(employeeID, ModuleID, BedID, time, mutedTime);
+                    }
+                    
+                    RunningData.alarm = false;
+                }
+                Thread.Sleep(1000);
+            }
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
@@ -80,7 +117,12 @@ namespace Software_Engin_Project
         {
             if (RunningData.alarm == true)
             {
-                LoginAlarmPic1.Show();
+                AlarmPic1.Show();
+                
+            }
+            else
+            {
+                AlarmPic1.Hide();
             }
         }
     }

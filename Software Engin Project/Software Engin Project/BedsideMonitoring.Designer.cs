@@ -46,7 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.alarmPic2 = new System.Windows.Forms.PictureBox();
             this.Namelabel = new System.Windows.Forms.Label();
             this.PulseText = new System.Windows.Forms.TextBox();
             this.BreathingText = new System.Windows.Forms.TextBox();
@@ -56,7 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmPic2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -234,15 +234,16 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // pictureBox5
+            // alarmPic2
             // 
-            this.pictureBox5.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(719, -1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 76);
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
+            this.alarmPic2.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
+            this.alarmPic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.alarmPic2.Location = new System.Drawing.Point(719, -1);
+            this.alarmPic2.Name = "alarmPic2";
+            this.alarmPic2.Size = new System.Drawing.Size(80, 76);
+            this.alarmPic2.TabIndex = 18;
+            this.alarmPic2.TabStop = false;
+            this.alarmPic2.Click += new System.EventHandler(this.PictureBox5_Click_1);
             // 
             // Namelabel
             // 
@@ -295,7 +296,7 @@
             this.Controls.Add(this.BreathingText);
             this.Controls.Add(this.PulseText);
             this.Controls.Add(this.Namelabel);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.alarmPic2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -321,7 +322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmPic2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,11 +348,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.TextBox PulseText;
         private System.Windows.Forms.TextBox BreathingText;
         private System.Windows.Forms.TextBox Bloodtext;
         private System.Windows.Forms.TextBox TempText;
+        private System.Windows.Forms.PictureBox alarmPic2;
     }
 }

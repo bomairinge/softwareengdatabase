@@ -30,6 +30,7 @@ namespace Software_Engin_Project
         private void Management_Load(object sender, EventArgs e)
         {
             populateLoginData();
+            populateAlarmData();
         }
 
         public void populateLoginData()
@@ -48,6 +49,15 @@ namespace Software_Engin_Project
             BedOverview bed = new BedOverview();
 
             bed.Show();
+        }
+
+        public void populateAlarmData()
+        {
+            DataSet alarmDataSet = DatabaseConnection.Sample.createDataSet("SELECT * FROM Alarms");
+
+            DataTable table1 = alarmDataSet.Tables[0];
+
+            dataGridView2.DataSource = table1;
         }
     }
 }

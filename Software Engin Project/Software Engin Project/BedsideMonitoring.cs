@@ -13,19 +13,9 @@ namespace Software_Engin_Project
 {
     public partial class BedsideMonitoring : Form
     {
-        public static void ThreadProc()
-        {
-            for (int i = 0; i < 999999; i++)
-            {
-                
-                // Yield the rest of the time slice.
-                Thread.Sleep(0);
-            }
-        }
         public BedsideMonitoring()
         {
-            Thread t = new Thread(new ThreadStart(ThreadProc));
-            t.Start();
+            
             InitializeComponent();
             if (RunningData.beds[Constants.currentBed].currentPatient == null)
             {
@@ -37,14 +27,15 @@ namespace Software_Engin_Project
                 string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
                 string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
                 Namelabel.Text =   FirstName + LastName;
-
-                Thread thr = new Thread(new ThreadStart(AssignVitals));
+                
+                Thread thr = new Thread(new ThreadStart(DisplayVitals));
+                
                 thr.Start();
                 
             }            
 
         }
-        public void AssignVitals()
+        public void DisplayVitals()
         {
             for (int i = 0; i < 99999999; i++)
             {
@@ -140,5 +131,12 @@ namespace Software_Engin_Project
         {
 
         }
+
+        private void PictureBox5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        
+        
     }
 }

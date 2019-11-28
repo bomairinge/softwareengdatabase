@@ -1,4 +1,7 @@
-﻿namespace Software_Engin_Project
+﻿using System;
+using System.Windows.Forms;
+
+namespace Software_Engin_Project
 {
     partial class Management
     {
@@ -52,7 +55,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(102, 125);
+            this.button1.Location = new System.Drawing.Point(478, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 37);
             this.button1.TabIndex = 3;
@@ -63,7 +66,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button2.Location = new System.Drawing.Point(558, 125);
+            this.button2.Location = new System.Drawing.Point(72, 113);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 37);
             this.button2.TabIndex = 4;
@@ -73,17 +76,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 186);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 188);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(499, 186);
+            this.dataGridView2.Location = new System.Drawing.Point(292, 149);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(465, 208);
             this.dataGridView2.TabIndex = 7;
             // 
             // button5
@@ -116,6 +120,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

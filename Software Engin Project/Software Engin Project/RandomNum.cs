@@ -13,7 +13,7 @@ namespace Software_Engin_Project
 
         public static int NextRandom()
         {
-            lock (rng) return rng.Next(0, 50);
+            lock (rng) return rng.Next(0, 51);
         }
     }
 }

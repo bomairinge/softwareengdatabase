@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LoginAlarmPic1 = new System.Windows.Forms.PictureBox();
+            this.AlarmPic1 = new System.Windows.Forms.PictureBox();
             this.Login_Button = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.LoginAlarmPic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlarmPic1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,16 +59,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Login";
             // 
-            // LoginAlarmPic1
+            // AlarmPic1
             // 
-            this.LoginAlarmPic1.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
-            this.LoginAlarmPic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LoginAlarmPic1.Location = new System.Drawing.Point(688, 352);
-            this.LoginAlarmPic1.Name = "LoginAlarmPic1";
-            this.LoginAlarmPic1.Size = new System.Drawing.Size(114, 98);
-            this.LoginAlarmPic1.TabIndex = 2;
-            this.LoginAlarmPic1.TabStop = false;
-            this.LoginAlarmPic1.Click += new System.EventHandler(this.LoginAlarmPic1_Click);
+            this.AlarmPic1.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
+            this.AlarmPic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AlarmPic1.Location = new System.Drawing.Point(688, 352);
+            this.AlarmPic1.Name = "AlarmPic1";
+            this.AlarmPic1.Size = new System.Drawing.Size(114, 98);
+            this.AlarmPic1.TabIndex = 2;
+            this.AlarmPic1.TabStop = false;
+            this.AlarmPic1.Click += new System.EventHandler(this.LoginAlarmPic1_Click);
             // 
             // Login_Button
             // 
@@ -127,13 +127,13 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Login_Button);
-            this.Controls.Add(this.LoginAlarmPic1);
+            this.Controls.Add(this.AlarmPic1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.LoginAlarmPic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlarmPic1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +143,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox LoginAlarmPic1;
+        private System.Windows.Forms.PictureBox AlarmPic1;
         private System.Windows.Forms.Button Login_Button;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

@@ -14,8 +14,6 @@ namespace Software_Engin_Project
         public static List<Patient> patients;
         public static bool alarm = false;
         
-        private static Timer timer;
-
         public DataSet patient = DatabaseConnection.Sample.createDataSet("select * FROM Patient");
         public RunningData()
         {
@@ -25,9 +23,7 @@ namespace Software_Engin_Project
             GenerateBed();
             GeneratePatientList();
             AssignPatientToBed();
-            Run();
-
-
+            
         }
         public void GenerateBed()
         {
@@ -86,24 +82,10 @@ namespace Software_Engin_Project
                 }
             }
         }
-        private static void Run()
-        {
-            timer = new Timer();
-            timer.Interval = 1000;
-            timer.AutoReset = true;
-            timer.Elapsed += AlarmData;
-            timer.Enabled = true;
-            timer.Start();
-
-        }
-        static void AlarmData(object sender, ElapsedEventArgs e)
+        
+        public static void AlarmData()
         {      
-            
-            int pulseRng = RandomNum.NextRandom();
-            int tempRng = RandomNum.NextRandom();
-            int breathingRng = RandomNum.NextRandom();
-            int bloodRng = RandomNum.NextRandom();
-
+                        
             for (int i = 0; i <= patients.Count; i++)
             {
                 if (beds[i].currentPatient == null)
@@ -113,36 +95,41 @@ namespace Software_Engin_Project
                 else
                 {
                     //Sets patient levels for measurables
-                    beds[i].currentPatient.Pulse = pulseRng;
-                    beds[i].currentPatient.Temp = tempRng;
-                    beds[i].currentPatient.Breathing = breathingRng;
-                    beds[i].currentPatient.Blood = bloodRng;
+                    beds[i].currentPatient.Pulse = RandomNum.NextRandom();
+                    beds[i].currentPatient.Temp = RandomNum.NextRandom();
+                    beds[i].currentPatient.Breathing = RandomNum.NextRandom();
+                    beds[i].currentPatient.Blood = RandomNum.NextRandom();
 
-                    /*for (int j = 0; j < beds[i].moduleList.Count; i++)
-                    {
-
-                        if (beds[i].currentPatient.Pulse > beds[i].moduleList[j].Upperlimit || beds[i].currentPatient.Pulse < beds[i].moduleList[j].Lowerlimit) 
+                    if (beds[i].currentPatient.Pulse > beds[i].moduleList[0].Upperlimit || beds[i].currentPatient.Pulse < beds[i].moduleList[0].Lowerlimit) 
+                        {                        
+                        alarm = true;
+                        Constants.alarmingBed = i;
+                        Constants.alarmingModule = 0;
+                        }
+                        else if (beds[i].currentPatient.Breathing > beds[i].moduleList[1].Upperlimit || beds[i].currentPatient.Breathing < beds[i].moduleList[1].Lowerlimit)
+                           {
+                            alarm = true;
+                        Constants.alarmingBed = i;
+                        Constants.alarmingModule = 1;
+                    }
+                        else if (beds[i].currentPatient.Blood > beds[i].moduleList[2].Upperlimit || beds[i].currentPatient.Blood < beds[i].moduleList[2].Lowerlimit)
                         {
                             alarm = true;
-                        }
-                        else if (beds[i].currentPatient.Temp > currentModule.Upperlimit || beds[i].currentPatient.Temp < currentModule.Lowerlimit)
+                        Constants.alarmingBed = i;
+                        Constants.alarmingModule = 2;
+                    }
+                        else if (beds[i].currentPatient.Temp > beds[i].moduleList[3].Upperlimit || beds[i].currentPatient.Temp < beds[i].moduleList[3].Lowerlimit)
                         {
-
-                        }
-                        else if (beds[i].currentPatient.Breathing > currentModule.Upperlimit || beds[i].currentPatient.Breathing < currentModule.Lowerlimit)
-                        {
-
-                        }
-                        else if (beds[i].currentPatient.Blood > currentModule.Upperlimit || beds[i].currentPatient.Blood < currentModule.Lowerlimit)
-                        {
-
-                        }
+                            alarm = true;
+                        Constants.alarmingBed = i;
+                        Constants.alarmingModule = 3;
+                    }
                         else
                         {
-                            return;
-                        }
+                     
+                    }
 
-                    }*/
+                    
 
 
                 }

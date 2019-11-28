@@ -48,7 +48,7 @@ namespace Software_Engin_Project
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             this.Hide();
-
+            Constants.currentBed = 0;
             BedsideMonitoring bed = new BedsideMonitoring();
             
             bed.Show();
@@ -75,6 +75,7 @@ namespace Software_Engin_Project
 
         private void PictureBox11_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             Constants.currentBed = 2;
             BedsideMonitoring bed = new BedsideMonitoring();
