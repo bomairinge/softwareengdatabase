@@ -26,83 +26,100 @@ namespace Software_Engin_Project
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            //Upon Login click runs the method to check if the login credentials exist
             int rows = DatabaseConnection.Sample.getSelectCount("Select Count(*) from Employee where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'");
 
             
             
            
-
+            //will trigger if a employees credentials match
               if(rows==1)
             {
+                //hides this form
                 this.Hide();
 
+                //creates a timestamp
                 string time = Constants.TimeStamp(DateTime.Now);
-
+                //Logs the current employee logging in as currentEmployee
                 int employeeID = Convert.ToInt32(textBox1.Text);
                 Constants.currentEmployee = textBox1.Text;
 
+                //Creates the Login record
                 DatabaseConnection.Sample.loginRecord(employeeID, time);
-
+                //creates new bed overview form
                 BedOverview bed = new BedOverview();
-
+                //shows the bed overview form
                 bed.Show();
             }
             else
             {
-
+                //if No credentials this else will trigger
 
 
                 // Displays message box
                 MessageBox.Show("No Username or Password found with those credentials.");
 
-                MessageBox.Show("No user with these credentials.");
+               
             } 
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
+            //Hides the alarm pic until we want to show it
             AlarmPic1.Hide();
 
+            //Creates a new running Data which initialises beds and assigns patients/modules
             RunningData run = new RunningData();
 
+            //creation of a thread to run the Method which controls alarms
             Thread loginthr = new Thread(new ThreadStart(PatientVitals));
+            //Starts the thread
             loginthr.Start();
             
         }
         public void PatientVitals()
         {
+            //the For loop runs for the entirity of the program hence the large range
             for (int i = 0; i < 999999999; i++)
             {
+                //Runs the alarm data method which checks if a bed should be alarming out or not
                 RunningData.AlarmData();
+                //method to show the Alarm picture if a bed is alarming
                 AlarmsShow();
 
+                //Runs this If statement if a beds alarm is set to true
                 if(RunningData.alarm == true)
                 {
+                    //Pulls a timestamp for the alarm
                     string time = Constants.TimeStamp(DateTime.Now);
-
+                    //Pulls the EmployeeID for the employee currently logged in
                     int employeeID = Convert.ToInt32(Constants.currentEmployee);
+                    //Pulls which Module is alarming out
                     int ModuleID = Convert.ToInt32(Constants.alarmingModule);
+                    //Pulls which bed is alarming out increases by 1 as bed 0 does not exist
                     int BedID = Convert.ToInt32(Constants.alarmingBed+1);
                     
                     
+                    //Creates a Messagebox showing which patient/bed is alarming out and give the user the option to mute the alarm
 
                     DialogResult result = MessageBox.Show("Patient: " + RunningData.beds[Constants.alarmingBed].currentPatient.Firstname + " " + 
                     RunningData.beds[Constants.alarmingBed].currentPatient.LastName + "\nBed: " + (Constants.alarmingBed + 1) + "\nMute Alarm?"
                     , caption:"Alarm" , MessageBoxButtons.OK);
 
+                    //activates on a user clicking Ok within messagebox
                     if (result == DialogResult.OK)
                     {
+                        //Creates a timestamp for the time alarm is muted
                         string mutedTime = Constants.TimeStamp(DateTime.Now);
 
                         //Create initial alarm record
                         DatabaseConnection.Sample.alarmRecord(employeeID, ModuleID, BedID, time, mutedTime);
                     }
-                    
+                    //sets the alarms back to false so they can be reactivated upon next alarm
                     RunningData.alarm = false;
                 }
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
             }
         }
 
@@ -115,15 +132,18 @@ namespace Software_Engin_Project
         {
             
         }
+        //method to show alarms upon a bed alarming out
         public void AlarmsShow()
         {
             if (RunningData.alarm == true)
             {
+                //shows the alarming picture
                 AlarmPic1.Show();
                 
             }
             else
             {
+                //hides the alarm picture
                 AlarmPic1.Hide();
             }
         }

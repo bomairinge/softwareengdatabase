@@ -22,17 +22,21 @@ namespace Software_Engin_Project
 
         }
 
+        //Logout button
         private void Button5_Click(object sender, EventArgs e)
         {
+            //Hides the current page
             this.Hide();
+            //Pulls a timestamp for the Login Log records
             string time = Constants.TimeStamp(DateTime.Now);
-
+            //Pulls a employee ID for the employee Logging out
             int employeeID = Convert.ToInt32(Constants.currentEmployee);
-
+            //Method to input the Logout record
             DatabaseConnection.Sample.loginRecord(employeeID, time);
 
+            //Creates a Login Page
             Login log = new Login();
-
+            //Shows the Login Page
             log.Show();
 
         }
@@ -40,17 +44,22 @@ namespace Software_Engin_Project
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Generates a management page
             Management man = new Management();
-
+            //Shows the Management Page
             man.Show();
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 0;
+
+            //creates new bedside monitoring page
             BedsideMonitoring bed = new BedsideMonitoring();
-            
+
+            //Shows the Bedside Monitoring Page
             bed.Show();
         }
 
@@ -62,6 +71,7 @@ namespace Software_Engin_Project
         private void PictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 1;
             BedsideMonitoring bed = new BedsideMonitoring();
             
@@ -77,6 +87,7 @@ namespace Software_Engin_Project
         {
             
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 2;
             BedsideMonitoring bed = new BedsideMonitoring();
             
@@ -86,6 +97,7 @@ namespace Software_Engin_Project
         private void PictureBox10_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 3;
             BedsideMonitoring bed = new BedsideMonitoring();
             
@@ -95,6 +107,7 @@ namespace Software_Engin_Project
         private void PictureBox9_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 4;
             BedsideMonitoring bed = new BedsideMonitoring();
            
@@ -104,6 +117,7 @@ namespace Software_Engin_Project
         private void PictureBox8_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 5;
             BedsideMonitoring bed = new BedsideMonitoring();
             
@@ -114,6 +128,7 @@ namespace Software_Engin_Project
         {
             this.Hide();
             Constants.currentBed = 6;
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             BedsideMonitoring bed = new BedsideMonitoring();
             
             bed.Show();
@@ -123,6 +138,7 @@ namespace Software_Engin_Project
         {
             this.Hide();
             Constants.currentBed = 7;
+            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             BedsideMonitoring bed = new BedsideMonitoring();
             
             bed.Show();
