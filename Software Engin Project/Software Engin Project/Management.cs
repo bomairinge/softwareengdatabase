@@ -17,16 +17,6 @@ namespace Software_Engin_Project
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Management_Load(object sender, EventArgs e)
         {
             //Upon load activates the methods to populate the Alarms and Login record Grid views

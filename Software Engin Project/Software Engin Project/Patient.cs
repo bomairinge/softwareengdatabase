@@ -15,6 +15,7 @@ namespace Software_Engin_Project
         private decimal breathing;
         private decimal blood;
         private decimal temp;
+        // Constructors for patients class
         public int PatientID
         {
             get

@@ -182,7 +182,6 @@ E:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\
 E:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
 E:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
 E:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
-K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
 D:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
@@ -241,3 +240,4 @@ D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\
 D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
 D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
 E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
+K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources

@@ -13,6 +13,8 @@ namespace Software_Engin_Project
 {
     public partial class BedsideMonitoring : Form
     {
+        Thread thr;
+        Set_Alarms limits = new Set_Alarms();
         public BedsideMonitoring()
         {
             
@@ -34,7 +36,7 @@ namespace Software_Engin_Project
                 Namelabel.Text =   FirstName + LastName;
                 
                 //Creation of a thread to loop through patient vitals for the current bed
-                Thread thr = new Thread(new ThreadStart(DisplayVitals));
+                thr = new Thread(new ThreadStart(DisplayVitals));
                 
                 //starts the thread
                 thr.Start();
@@ -86,30 +88,9 @@ namespace Software_Engin_Project
             }
         }
 
-        
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Home_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
+            thr.Abort();
             //Hides this Page
             this.Hide();
             //creates the bed overview
@@ -122,33 +103,38 @@ namespace Software_Engin_Project
         {
             
         }
-           
 
-        private void PictureBox1_Click(object sender, EventArgs e)
+        private void ChangeModPulse_Click(object sender, EventArgs e)
         {
-
+            thr.Abort();
+            Constants.currentModule = 0;
+            this.Hide();
+            //Set_Alarms limits = new Set_Alarms();
+            limits.Show();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void ChangeModBreathing_Click(object sender, EventArgs e)
         {
-
+            thr.Abort();
+            Constants.currentModule = 1;
+            this.Hide();
+            limits.Show();
         }
 
-        private void BreathingText_TextChanged(object sender, EventArgs e)
+        private void ChangeModBlood_Click(object sender, EventArgs e)
         {
-
+            thr.Abort();
+            Constants.currentModule = 2;
+            this.Hide();
+            limits.Show();
         }
 
-        private void Label10_Click(object sender, EventArgs e)
+        private void ChangeModTemp_Click(object sender, EventArgs e)
         {
-
+            thr.Abort();
+            Constants.currentModule = 3;
+            this.Hide();
+            limits.Show();
         }
-
-        private void PictureBox5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-        
-        
     }
 }

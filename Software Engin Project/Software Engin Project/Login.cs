@@ -18,13 +18,7 @@ namespace Software_Engin_Project
         {
             InitializeComponent();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             //Upon Login click runs the method to check if the login credentials exist
             int rows = DatabaseConnection.Sample.getSelectCount("Select Count(*) from Employee where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'");
@@ -48,8 +42,10 @@ namespace Software_Engin_Project
                 DatabaseConnection.Sample.loginRecord(employeeID, time);
                 //creates new bed overview form
                 BedOverview bed = new BedOverview();
+                Pager page = new Pager();
                 //shows the bed overview form
                 bed.Show();
+                page.Show();
             }
             else
             {
@@ -68,17 +64,9 @@ namespace Software_Engin_Project
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             //Hides the alarm pic until we want to show it
             AlarmPic1.Hide();
-
-            //Creates a new running Data which initialises beds and assigns patients/modules
-            RunningData run = new RunningData();
-
-            //creation of a thread to run the Method which controls alarms
-            Thread loginthr = new Thread(new ThreadStart(PatientVitals));
-            //Starts the thread
-            loginthr.Start();
             
         }
-        public void PatientVitals()
+        public static void PatientVitals()
         {
             //the For loop runs for the entirity of the program hence the large range
             for (int i = 0; i < 999999999; i++)
@@ -86,9 +74,18 @@ namespace Software_Engin_Project
                 //Runs the alarm data method which checks if a bed should be alarming out or not
                 RunningData.AlarmData();
                 //method to show the Alarm picture if a bed is alarming
-                AlarmsShow();
 
-                //Runs this If statement if a beds alarm is set to true
+                //If a patient died/vital hits 0 a permanent messagebox will appear
+                if(RunningData.fatalAlarm == true)
+                {
+                    while (true)
+                    {
+                        DialogResult newResult = MessageBox.Show("Patient: " + RunningData.beds[Constants.alarmingBed].currentPatient.Firstname + " " +
+                        RunningData.beds[Constants.alarmingBed].currentPatient.LastName + "\nBed: " + (Constants.alarmingBed + 1) + "\nPatient is DEAD!"
+                        , caption: "Fatal", MessageBoxButtons.OK);
+                    }
+                }
+                // if a patient vital exceeds the limits a message box will appear/alarm sound
                 if(RunningData.alarm == true)
                 {
                     //Pulls a timestamp for the alarm
@@ -121,16 +118,6 @@ namespace Software_Engin_Project
                 }
                 Thread.Sleep(2000);
             }
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void LoginAlarmPic1_Click(object sender, EventArgs e)
-        {
-            
         }
         //method to show alarms upon a bed alarming out
         public void AlarmsShow()

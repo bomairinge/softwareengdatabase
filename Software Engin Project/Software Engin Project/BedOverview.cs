@@ -17,11 +17,6 @@ namespace Software_Engin_Project
             InitializeComponent();
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         //Logout button
         private void Button5_Click(object sender, EventArgs e)
         {
@@ -41,7 +36,7 @@ namespace Software_Engin_Project
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void Logs_Click(object sender, EventArgs e)
         {
             this.Hide();
             //Generates a management page
@@ -50,8 +45,14 @@ namespace Software_Engin_Project
             man.Show();
         }
 
-        private void PictureBox3_Click(object sender, EventArgs e)
+        private void Bed1_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[0].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 0;
@@ -61,87 +62,133 @@ namespace Software_Engin_Project
 
             //Shows the Bedside Monitoring Page
             bed.Show();
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
+            }
 
         }
 
-        private void PictureBox4_Click(object sender, EventArgs e)
+        private void Bed2_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[1].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 1;
             BedsideMonitoring bed = new BedsideMonitoring();
-            
+
             bed.Show();
-        }
-
-        private void BedOverview_Load(object sender, EventArgs e)
-        {
+            }
 
         }
 
-        private void PictureBox11_Click(object sender, EventArgs e)
+        private void Bed3_Click(object sender, EventArgs e)
         {
-            
+            if (RunningData.beds[2].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 2;
             BedsideMonitoring bed = new BedsideMonitoring();
-            
+
             bed.Show();
+
+            }
         }
 
-        private void PictureBox10_Click(object sender, EventArgs e)
+        private void Bed4_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[3].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 3;
             BedsideMonitoring bed = new BedsideMonitoring();
-            
+
             bed.Show();
+            }
+
         }
 
-        private void PictureBox9_Click(object sender, EventArgs e)
+        private void Bed5_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[4].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 4;
             BedsideMonitoring bed = new BedsideMonitoring();
            
             bed.Show();
+            }
+
         }
 
-        private void PictureBox8_Click(object sender, EventArgs e)
+        private void Bed6_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[5].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             Constants.currentBed = 5;
             BedsideMonitoring bed = new BedsideMonitoring();
             
             bed.Show();
+            }
+
         }
 
-        private void PictureBox6_Click(object sender, EventArgs e)
+        private void Bed7_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[6].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             Constants.currentBed = 6;
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             BedsideMonitoring bed = new BedsideMonitoring();
-            
+
             bed.Show();
+            }
+
         }
 
-        private void PictureBox7_Click(object sender, EventArgs e)
+        private void Bed8_Click(object sender, EventArgs e)
         {
+            if (RunningData.beds[7].currentPatient == null)
+            {
+                return;
+            }
+            else
+            {
             this.Hide();
             Constants.currentBed = 7;
             //Assigns a value to the Constant currentBed variable so we know which bed we are working with
             BedsideMonitoring bed = new BedsideMonitoring();
-            
             bed.Show();
+            }
+
         }
     }
 }

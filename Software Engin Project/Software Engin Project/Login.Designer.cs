@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AlarmPic1 = new System.Windows.Forms.PictureBox();
-            this.Login_Button = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,18 +68,17 @@
             this.AlarmPic1.Size = new System.Drawing.Size(114, 98);
             this.AlarmPic1.TabIndex = 2;
             this.AlarmPic1.TabStop = false;
-            this.AlarmPic1.Click += new System.EventHandler(this.LoginAlarmPic1_Click);
             // 
-            // Login_Button
+            // LoginButton
             // 
-            this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.Login_Button.Location = new System.Drawing.Point(362, 311);
-            this.Login_Button.Name = "Login_Button";
-            this.Login_Button.Size = new System.Drawing.Size(111, 53);
-            this.Login_Button.TabIndex = 3;
-            this.Login_Button.Text = "Log In";
-            this.Login_Button.UseVisualStyleBackColor = true;
-            this.Login_Button.Click += new System.EventHandler(this.Button1_Click);
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.LoginButton.Location = new System.Drawing.Point(362, 311);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(111, 53);
+            this.LoginButton.TabIndex = 3;
+            this.LoginButton.Text = "Log In";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // textBox1
             // 
@@ -94,7 +93,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 20);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // label3
             // 
@@ -105,7 +103,6 @@
             this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Username:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -126,7 +123,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Login_Button);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.AlarmPic1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -144,7 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox AlarmPic1;
-        private System.Windows.Forms.Button Login_Button;
+        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;

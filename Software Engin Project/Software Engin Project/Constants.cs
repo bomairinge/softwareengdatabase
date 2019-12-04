@@ -20,6 +20,8 @@ namespace Software_Engin_Project
         //Keeps track of which bed is currently being viewed
         public static int currentBed;
 
+        public static int currentModule;
+
         //Method to generate a timestamp when called used for both alarm logs and Login records
         public static string TimeStamp(DateTime value)
         {
