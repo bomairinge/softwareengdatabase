@@ -148,7 +148,6 @@
             this.SetCurrentUpper.Size = new System.Drawing.Size(35, 13);
             this.SetCurrentUpper.TabIndex = 11;
             this.SetCurrentUpper.Text = "label4";
-            this.SetCurrentUpper.Click += new System.EventHandler(this.SetCurrentUpper_Click);
             // 
             // Set_Alarms
             // 

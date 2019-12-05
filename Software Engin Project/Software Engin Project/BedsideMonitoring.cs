@@ -15,6 +15,19 @@ namespace Software_Engin_Project
     {
         Thread thr;
         Set_Alarms limits = new Set_Alarms();
+        private static BedsideMonitoring _BedsideMonitoring;
+
+        public static BedsideMonitoring GetBedsideMonitoringInstance
+        {
+            get
+            {
+                if (_BedsideMonitoring == null)
+                {
+                    _BedsideMonitoring = new BedsideMonitoring();
+                }
+                return _BedsideMonitoring;
+            }
+        }
         public BedsideMonitoring()
         {
 
@@ -28,13 +41,6 @@ namespace Software_Engin_Project
             }
             else
             {
-                //If Occupied pulls Patient name from the patient linked to the bed
-                string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
-                string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
-
-                //Displays patients name
-                Namelabel.Text = FirstName + LastName;
-
                 //Creation of a thread to loop through patient vitals for the current bed
                 thr = new Thread(new ThreadStart(DisplayVitals));
 
@@ -56,6 +62,10 @@ namespace Software_Engin_Project
                 }
                 else
                 {
+                    string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
+                    string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
+                    //Displays patients name
+                    Namelabel.Text = FirstName + LastName;
                     //Pulls the variable from running data for current bed and patient to a string to be displayed.
                     string pulse = RunningData.beds[Constants.currentBed].currentPatient.Pulse.ToString("00.00");
                     //Assigns the variable to the required vital to display to the user
@@ -90,13 +100,12 @@ namespace Software_Engin_Project
 
         private void Home_Click(object sender, EventArgs e)
         {
-            thr.Abort();
             //Hides this Page
             this.Hide();
-            //creates the bed overview
-            BedOverview bed = new BedOverview();
+
             //Displays the bed overview allowing the user to change beds/logout/access management
-            bed.Show();
+            BedOverview.BedOverviewInstance.Show();
+
         }
 
         private void BedsideMonitoring_Load(object sender, EventArgs e)
@@ -106,37 +115,31 @@ namespace Software_Engin_Project
 
         private void ChangeModPulse_Click(object sender, EventArgs e)
         {
-            // Closes thread to stop memory leak/dupelicated threads
-            thr.Abort();
             // sets current module
             Constants.currentModule = 0;
             this.Hide();
-            //Set_Alarms limits = new Set_Alarms();
-            limits.Show();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
         // Same for all below
         private void ChangeModBreathing_Click(object sender, EventArgs e)
         {
-            thr.Abort();
             Constants.currentModule = 1;
             this.Hide();
-            limits.Show();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
 
         private void ChangeModBlood_Click(object sender, EventArgs e)
         {
-            thr.Abort();
             Constants.currentModule = 2;
             this.Hide();
-            limits.Show();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
 
         private void ChangeModTemp_Click(object sender, EventArgs e)
         {
-            thr.Abort();
             Constants.currentModule = 3;
             this.Hide();
-            limits.Show();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
     }
 }

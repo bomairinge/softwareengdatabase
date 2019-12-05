@@ -242,3 +242,20 @@ D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\
 E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
 K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources
 D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.CoreCompileInputs.cache
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+\\anglia.local\fs\StudentsHome\sja176\My Documents\Development\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb

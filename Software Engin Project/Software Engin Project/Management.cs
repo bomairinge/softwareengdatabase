@@ -12,6 +12,19 @@ namespace Software_Engin_Project
 {
     public partial class Management : Form
     {
+        private static Management _Management;
+
+        public static Management ManagementInstance
+        {
+            get
+            {
+                if (_Management == null)
+                {
+                    _Management = new Management();
+                }
+                return _Management;
+            }
+        }
         public Management()
         {
             InitializeComponent();
@@ -42,10 +55,7 @@ namespace Software_Engin_Project
         {
             //On button click returns to bedoverview hiding this form
             this.Hide();
-
-            BedOverview bed = new BedOverview();
-
-            bed.Show();
+            BedOverview.BedOverviewInstance.Show();
         }
 
         //Method to Show the Alarm data 

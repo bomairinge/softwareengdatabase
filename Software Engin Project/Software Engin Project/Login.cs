@@ -14,6 +14,19 @@ namespace Software_Engin_Project
 {
     public partial class Login : Form
     {
+        private static Login _Login;
+
+        public static Login LoginInstance
+        {
+            get
+            {
+                if (_Login == null)
+                {
+                    _Login = new Login();
+                }
+                return _Login;
+            }
+        }
         public Login()
         {
             InitializeComponent();
@@ -41,10 +54,10 @@ namespace Software_Engin_Project
                 //Creates the Login record
                 DatabaseConnection.Sample.loginRecord(employeeID, time);
                 //creates new bed overview form
-                BedOverview bed = new BedOverview();
+               
                 Pager page = new Pager();
                 //shows the bed overview form
-                bed.Show();
+                BedOverview.BedOverviewInstance.Show();
                 page.Show();
             }
             else

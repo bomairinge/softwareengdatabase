@@ -12,6 +12,19 @@ namespace Software_Engin_Project
 {
     public partial class BedOverview : Form
     {
+        private static BedOverview _BedOverviewInstance;
+
+        public static BedOverview BedOverviewInstance {
+            get
+            {
+                if(_BedOverviewInstance == null)
+                {
+                    _BedOverviewInstance = new BedOverview();
+                }
+                return _BedOverviewInstance;
+            }
+        }
+
         public BedOverview()
         {
             InitializeComponent();
@@ -28,21 +41,15 @@ namespace Software_Engin_Project
             int employeeID = Convert.ToInt32(Constants.currentEmployee);
             //Method to input the Logout record
             DatabaseConnection.Sample.loginRecord(employeeID, time);
-
-            //Creates a Login Page
-            Login log = new Login();
-            //Shows the Login Page
-            log.Show();
-
+            // Shows login page
+            Login.LoginInstance.Show();
         }
 
         private void Logs_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //Generates a management page
-            Management man = new Management();
             //Shows the Management Page
-            man.Show();
+            Management.ManagementInstance.Show();
         }
 
         private void Bed1_Click(object sender, EventArgs e)
@@ -56,12 +63,8 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 0;
-
-                //creates new bedside monitoring page
-                BedsideMonitoring bed = new BedsideMonitoring();
-
                 //Shows the Bedside Monitoring Page
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -77,9 +80,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 1;
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -95,9 +96,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 2;
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
 
             }
         }
@@ -113,9 +112,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 3;
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -131,9 +128,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 4;
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -149,9 +144,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
                 Constants.currentBed = 5;
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -167,9 +160,7 @@ namespace Software_Engin_Project
                 this.Hide();
                 Constants.currentBed = 6;
                 //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-                BedsideMonitoring bed = new BedsideMonitoring();
-
-                bed.Show();
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
@@ -184,9 +175,8 @@ namespace Software_Engin_Project
             {
                 this.Hide();
                 Constants.currentBed = 7;
-                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-                BedsideMonitoring bed = new BedsideMonitoring();
-                bed.Show();
+    
+                BedsideMonitoring.GetBedsideMonitoringInstance.Show();
             }
 
         }
