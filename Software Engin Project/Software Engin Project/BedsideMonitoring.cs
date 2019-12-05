@@ -103,16 +103,18 @@ namespace Software_Engin_Project
         {
             
         }
-
+        
         private void ChangeModPulse_Click(object sender, EventArgs e)
         {
+            // Closes thread to stop memory leak/dupelicated threads
             thr.Abort();
+            // sets current module
             Constants.currentModule = 0;
             this.Hide();
             //Set_Alarms limits = new Set_Alarms();
             limits.Show();
         }
-
+        // Same for all below
         private void ChangeModBreathing_Click(object sender, EventArgs e)
         {
             thr.Abort();

@@ -12,34 +12,36 @@ namespace Software_Engin_Project
 {
     public partial class Set_Alarms : Form
     {
+        string module = RunningData.beds[Constants.currentBed].moduleList[Constants.currentModule].Modulename;
         // converting vars for alarmlimit page
         decimal currentLower = RunningData.beds[Constants.currentBed].moduleList[Constants.currentModule].Lowerlimit;
         decimal currentUpper = RunningData.beds[Constants.currentBed].moduleList[Constants.currentModule].Upperlimit;
         public Set_Alarms()
         {
-            InitializeComponent();
-            string module = RunningData.beds[Constants.currentBed].moduleList[Constants.currentModule].Modulename;
+            // Will set module text to current module
             ModuleName.Text = module;
+            InitializeComponent();
+            
           
             SetCurrentLower.Text = Convert.ToString(currentLower);
             SetCurrentUpper.Text = Convert.ToString(currentUpper);
         }
 
-
+        // Will return to home page
         private void Button5_Click(object sender, EventArgs e)
         {
             BedOverview bed = new BedOverview();
 
             bed.Show();
         }
-
+        // Will return to patient page
         private void ReturnToPatient_Click(object sender, EventArgs e)
         {
             this.Hide();
             BedsideMonitoring patient = new BedsideMonitoring();
             patient.Show();
         }
-
+        // This will set the limits which have been entered
         private void SetLimits_Click(object sender, EventArgs e)
         {
             decimal newUpper = Convert.ToDecimal(UpperLimit.Text);

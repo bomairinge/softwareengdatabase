@@ -241,3 +241,4 @@ D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\
 D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
 E:\Git\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
 K:\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources
+D:\Soft Engin\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Pager.resources
