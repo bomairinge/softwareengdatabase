@@ -23,11 +23,11 @@ namespace Software_Engin_Project
             //Upon Login click runs the method to check if the login credentials exist
             int rows = DatabaseConnection.Sample.getSelectCount("Select Count(*) from Employee where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'");
 
-            
-            
-           
+
+
+
             //will trigger if a employees credentials match
-              if(rows==1)
+            if (rows == 1)
             {
                 //hides this form
                 this.Hide();
@@ -55,8 +55,8 @@ namespace Software_Engin_Project
                 // Displays message box
                 MessageBox.Show("No Username or Password found with those credentials.");
 
-               
-            } 
+
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Software_Engin_Project
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             //Hides the alarm pic until we want to show it
             AlarmPic1.Hide();
-            
+
         }
         public static void PatientVitals()
         {
@@ -76,7 +76,7 @@ namespace Software_Engin_Project
                 //method to show the Alarm picture if a bed is alarming
 
                 //If a patient died/vital hits 0 a permanent messagebox will appear
-                if(RunningData.fatalAlarm == true)
+                if (RunningData.fatalAlarm == true)
                 {
                     while (true)
                     {
@@ -86,7 +86,7 @@ namespace Software_Engin_Project
                     }
                 }
                 // if a patient vital exceeds the limits a message box will appear/alarm sound
-                if(RunningData.alarm == true)
+                if (RunningData.alarm == true)
                 {
                     //Pulls a timestamp for the alarm
                     string time = Constants.TimeStamp(DateTime.Now);
@@ -95,14 +95,14 @@ namespace Software_Engin_Project
                     //Pulls which Module is alarming out
                     int ModuleID = Convert.ToInt32(Constants.alarmingModule);
                     //Pulls which bed is alarming out increases by 1 as bed 0 does not exist
-                    int BedID = Convert.ToInt32(Constants.alarmingBed+1);
-                    
-                    
+                    int BedID = Convert.ToInt32(Constants.alarmingBed + 1);
+
+
                     //Creates a Messagebox showing which patient/bed is alarming out and give the user the option to mute the alarm
 
-                    DialogResult result = MessageBox.Show("Patient: " + RunningData.beds[Constants.alarmingBed].currentPatient.Firstname + " " + 
+                    DialogResult result = MessageBox.Show("Patient: " + RunningData.beds[Constants.alarmingBed].currentPatient.Firstname + " " +
                     RunningData.beds[Constants.alarmingBed].currentPatient.LastName + "\nBed: " + (Constants.alarmingBed + 1) + "\nMute Alarm?"
-                    , caption:"Alarm" , MessageBoxButtons.OK);
+                    , caption: "Alarm", MessageBoxButtons.OK);
 
                     //activates on a user clicking Ok within messagebox
                     if (result == DialogResult.OK)
@@ -126,7 +126,7 @@ namespace Software_Engin_Project
             {
                 //shows the alarming picture
                 AlarmPic1.Show();
-                
+
             }
             else
             {

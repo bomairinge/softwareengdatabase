@@ -14,7 +14,7 @@ namespace Software_Engin_Project
         public static Bed[] beds;
         public static List<Patient> patients;
         public static bool alarm, fatalAlarm = false;
-        
+
         public DataSet patient = DatabaseConnection.Sample.createDataSet("select * FROM Patient");
         public RunningData()
         {
@@ -24,13 +24,13 @@ namespace Software_Engin_Project
             GenerateBed();
             GeneratePatientList();
             AssignPatientToBed();
-            
+
         }
         public void GenerateBed()
         {
             // Loop to generate beds 
             for (int i = 0; i < beds.Length; i++)
-            { 
+            {
                 beds[i] = new Bed();
 
             }
@@ -65,10 +65,10 @@ namespace Software_Engin_Project
             Int32 length = patients.Count;
             for (int i = 0; i < 7; i++)
             {
-                
+
                 if (beds[i].BedAvailable() == true)
                 {
-                    if(i <= length && i < length)
+                    if (i <= length && i < length)
                     {
                         b = beds[i];
                         p = patients[i];
@@ -87,8 +87,8 @@ namespace Software_Engin_Project
         }
         // Alarm data - generates patient vitals and checks to see if they exceed the set alarm limits
         public static void AlarmData()
-        {      
-                        
+        {
+
             for (int i = 0; i <= patients.Count; i++)
             {
                 if (beds[i].currentPatient == null)
@@ -107,40 +107,35 @@ namespace Software_Engin_Project
                         fatalAlarm = true;
                     }
                     // If statements to check Patient[i] vitals and triggers alarm if exceeds limtis
-                    else if (beds[i].currentPatient.Pulse > beds[i].moduleList[0].Upperlimit || beds[i].currentPatient.Pulse < beds[i].moduleList[0].Lowerlimit) 
-                        {
+                    else if (beds[i].currentPatient.Pulse > beds[i].moduleList[0].Upperlimit || beds[i].currentPatient.Pulse < beds[i].moduleList[0].Lowerlimit)
+                    {
                         alarm = true;
                         Constants.alarmingBed = i;
                         Constants.alarmingModule = 0;
-                        }
-                        else if (beds[i].currentPatient.Breathing > beds[i].moduleList[1].Upperlimit || beds[i].currentPatient.Breathing < beds[i].moduleList[1].Lowerlimit)
-                           {
-                            alarm = true;
+                    }
+                    else if (beds[i].currentPatient.Breathing > beds[i].moduleList[1].Upperlimit || beds[i].currentPatient.Breathing < beds[i].moduleList[1].Lowerlimit)
+                    {
+                        alarm = true;
                         Constants.alarmingBed = i;
                         Constants.alarmingModule = 1;
                     }
-                        else if (beds[i].currentPatient.Blood > beds[i].moduleList[2].Upperlimit || beds[i].currentPatient.Blood < beds[i].moduleList[2].Lowerlimit)
-                        {
-                            alarm = true;
+                    else if (beds[i].currentPatient.Blood > beds[i].moduleList[2].Upperlimit || beds[i].currentPatient.Blood < beds[i].moduleList[2].Lowerlimit)
+                    {
+                        alarm = true;
                         Constants.alarmingBed = i;
                         Constants.alarmingModule = 2;
                     }
-                        else if (beds[i].currentPatient.Temp > beds[i].moduleList[3].Upperlimit || beds[i].currentPatient.Temp < beds[i].moduleList[3].Lowerlimit)
-                        {
-                            alarm = true;
+                    else if (beds[i].currentPatient.Temp > beds[i].moduleList[3].Upperlimit || beds[i].currentPatient.Temp < beds[i].moduleList[3].Lowerlimit)
+                    {
+                        alarm = true;
                         Constants.alarmingBed = i;
                         Constants.alarmingModule = 3;
                     }
-                        else
-                        {
-                     
+                    else
+                    {
+
                     }
-
-                    
-
-
                 }
-
             }
         }
     }

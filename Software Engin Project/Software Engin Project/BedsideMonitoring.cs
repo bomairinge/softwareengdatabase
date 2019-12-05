@@ -17,7 +17,7 @@ namespace Software_Engin_Project
         Set_Alarms limits = new Set_Alarms();
         public BedsideMonitoring()
         {
-            
+
             InitializeComponent();
             //checks upon loading if current bed is occupied
             if (RunningData.beds[Constants.currentBed].currentPatient == null)
@@ -33,15 +33,15 @@ namespace Software_Engin_Project
                 string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
 
                 //Displays patients name
-                Namelabel.Text =   FirstName + LastName;
-                
+                Namelabel.Text = FirstName + LastName;
+
                 //Creation of a thread to loop through patient vitals for the current bed
                 thr = new Thread(new ThreadStart(DisplayVitals));
-                
+
                 //starts the thread
                 thr.Start();
-                
-            }            
+
+            }
 
         }
         public void DisplayVitals()
@@ -101,9 +101,9 @@ namespace Software_Engin_Project
 
         private void BedsideMonitoring_Load(object sender, EventArgs e)
         {
-            
+
         }
-        
+
         private void ChangeModPulse_Click(object sender, EventArgs e)
         {
             // Closes thread to stop memory leak/dupelicated threads

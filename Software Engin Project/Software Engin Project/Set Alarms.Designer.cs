@@ -101,6 +101,7 @@
             this.DeleteModule.TabIndex = 6;
             this.DeleteModule.Text = "Delete Module";
             this.DeleteModule.UseVisualStyleBackColor = true;
+            this.DeleteModule.Click += new System.EventHandler(this.DeleteModule_Click);
             // 
             // SetLimits
             // 

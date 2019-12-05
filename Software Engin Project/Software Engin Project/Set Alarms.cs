@@ -21,8 +21,8 @@ namespace Software_Engin_Project
             // Will set module text to current module
             ModuleName.Text = module;
             InitializeComponent();
-            
-          
+
+
             SetCurrentLower.Text = Convert.ToString(currentLower);
             SetCurrentUpper.Text = Convert.ToString(currentUpper);
         }
@@ -57,9 +57,9 @@ namespace Software_Engin_Project
 
         }
 
-        private void SetCurrentUpper_Click(object sender, EventArgs e)
+        private void DeleteModule_Click(object sender, EventArgs e)
         {
-
+            // Code to delete module needed 
         }
     }
 }

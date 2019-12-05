@@ -21,7 +21,7 @@ namespace Software_Engin_Project
         //Creation of the dataset modules pulled from the Bedside Database
         private DataSet modules = DatabaseConnection.Sample.createDataSet("select * FROM Modules");
 
-        public  Bed()
+        public Bed()
         {
             //Creation of the list which is linked to each Bed
             moduleList = new List<Modules>();
@@ -42,7 +42,7 @@ namespace Software_Engin_Project
 
                     //adds each module to Module list
                     moduleList.Add(m);
-                    
+
                 }
             }
         }
@@ -59,11 +59,11 @@ namespace Software_Engin_Project
             //Sets the current patient dependant on the Patient passed into the method
             currentPatient = p;
         }
-        
+
     }
 }
 
-        
-        
-		
+
+
+
 

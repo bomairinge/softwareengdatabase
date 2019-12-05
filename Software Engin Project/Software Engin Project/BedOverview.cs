@@ -53,15 +53,15 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 0;
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 0;
 
-            //creates new bedside monitoring page
-            BedsideMonitoring bed = new BedsideMonitoring();
+                //creates new bedside monitoring page
+                BedsideMonitoring bed = new BedsideMonitoring();
 
-            //Shows the Bedside Monitoring Page
-            bed.Show();
+                //Shows the Bedside Monitoring Page
+                bed.Show();
             }
 
         }
@@ -74,12 +74,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 1;
-            BedsideMonitoring bed = new BedsideMonitoring();
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 1;
+                BedsideMonitoring bed = new BedsideMonitoring();
 
-            bed.Show();
+                bed.Show();
             }
 
         }
@@ -92,12 +92,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 2;
-            BedsideMonitoring bed = new BedsideMonitoring();
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 2;
+                BedsideMonitoring bed = new BedsideMonitoring();
 
-            bed.Show();
+                bed.Show();
 
             }
         }
@@ -110,12 +110,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 3;
-            BedsideMonitoring bed = new BedsideMonitoring();
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 3;
+                BedsideMonitoring bed = new BedsideMonitoring();
 
-            bed.Show();
+                bed.Show();
             }
 
         }
@@ -128,12 +128,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 4;
-            BedsideMonitoring bed = new BedsideMonitoring();
-           
-            bed.Show();
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 4;
+                BedsideMonitoring bed = new BedsideMonitoring();
+
+                bed.Show();
             }
 
         }
@@ -146,12 +146,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            Constants.currentBed = 5;
-            BedsideMonitoring bed = new BedsideMonitoring();
-            
-            bed.Show();
+                this.Hide();
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                Constants.currentBed = 5;
+                BedsideMonitoring bed = new BedsideMonitoring();
+
+                bed.Show();
             }
 
         }
@@ -164,12 +164,12 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            Constants.currentBed = 6;
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            BedsideMonitoring bed = new BedsideMonitoring();
+                this.Hide();
+                Constants.currentBed = 6;
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                BedsideMonitoring bed = new BedsideMonitoring();
 
-            bed.Show();
+                bed.Show();
             }
 
         }
@@ -182,11 +182,11 @@ namespace Software_Engin_Project
             }
             else
             {
-            this.Hide();
-            Constants.currentBed = 7;
-            //Assigns a value to the Constant currentBed variable so we know which bed we are working with
-            BedsideMonitoring bed = new BedsideMonitoring();
-            bed.Show();
+                this.Hide();
+                Constants.currentBed = 7;
+                //Assigns a value to the Constant currentBed variable so we know which bed we are working with
+                BedsideMonitoring bed = new BedsideMonitoring();
+                bed.Show();
             }
 
         }
