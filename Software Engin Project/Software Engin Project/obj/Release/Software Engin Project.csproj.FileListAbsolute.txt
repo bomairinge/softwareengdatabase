@@ -15,3 +15,20 @@ K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Proj
 K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csproj.CoreCompileInputs.cache
 K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.exe
 K:\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.pdb
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Release\Bedside_Database.mdf
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Release\Bedside_Database_log.ldf
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.exe.config
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.exe
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Release\Software Engin Project.pdb
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csprojAssemblyReference.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.BedOverview.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.BedsideMonitoring.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Login.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Management.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Properties.Resources.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Set_Alarms.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software_Engin_Project.Testform.resources
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csproj.GenerateResource.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.csproj.CoreCompileInputs.cache
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.exe
+K:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Release\Software Engin Project.pdb

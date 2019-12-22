@@ -13,54 +13,68 @@ namespace Software_Engin_Project
 {
     public partial class BedsideMonitoring : Form
     {
-        public static void ThreadProc()
+        Thread thr;
+        Set_Alarms limits = new Set_Alarms();
+        private static BedsideMonitoring _BedsideMonitoring;
+
+        public static BedsideMonitoring GetBedsideMonitoringInstance
         {
-            for (int i = 0; i < 999999; i++)
+            get
             {
-                
-                // Yield the rest of the time slice.
-                Thread.Sleep(0);
+                if (_BedsideMonitoring == null)
+                {
+                    _BedsideMonitoring = new BedsideMonitoring();
+                }
+                return _BedsideMonitoring;
             }
         }
         public BedsideMonitoring()
         {
-            Thread t = new Thread(new ThreadStart(ThreadProc));
-            t.Start();
+
             InitializeComponent();
+            //checks upon loading if current bed is occupied
             if (RunningData.beds[Constants.currentBed].currentPatient == null)
             {
+                //If unnoccupied displays no patient
                 Namelabel.Text = "No Patient";
                 return;
             }
             else
             {
-                string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
-                string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
-                Namelabel.Text =   FirstName + LastName;
+                //Creation of a thread to loop through patient vitals for the current bed
+                thr = new Thread(new ThreadStart(DisplayVitals));
 
-                Thread thr = new Thread(new ThreadStart(AssignVitals));
+                //starts the thread
                 thr.Start();
-                
-            }            
+
+            }
 
         }
-        public void AssignVitals()
+        public void DisplayVitals()
         {
+            //creation of the for loop that will run as long as needed
             for (int i = 0; i < 99999999; i++)
             {
+                //Checks if bed is empty so it doesnt run with an empty bed, which would crash the program
                 if (RunningData.beds[Constants.currentBed].currentPatient == null)
                 {
                     break;
                 }
                 else
                 {
-
+                    string FirstName = RunningData.beds[Constants.currentBed].currentPatient.Firstname;
+                    string LastName = RunningData.beds[Constants.currentBed].currentPatient.LastName;
+                    //Displays patients name
+                    Namelabel.Text = FirstName + LastName;
+                    //Pulls the variable from running data for current bed and patient to a string to be displayed.
                     string pulse = RunningData.beds[Constants.currentBed].currentPatient.Pulse.ToString("00.00");
+                    //Assigns the variable to the required vital to display to the user
                     if (PulseText.InvokeRequired)
                         this.Invoke(new MethodInvoker(() => PulseText.Text = pulse));
                     else
                         PulseText.Text = pulse;
 
+                    // as above just for the other 3 vitals
                     string breath = RunningData.beds[Constants.currentBed].currentPatient.Breathing.ToString("00.00");
                     if (PulseText.InvokeRequired)
                         this.Invoke(new MethodInvoker(() => BreathingText.Text = breath));
@@ -84,61 +98,48 @@ namespace Software_Engin_Project
             }
         }
 
-        
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Home_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-            
+            //Hides this Page
             this.Hide();
-            BedOverview bed = new BedOverview();
 
-            bed.Show();
+            //Displays the bed overview allowing the user to change beds/logout/access management
+            BedOverview.BedOverviewInstance.Show();
+
         }
 
         private void BedsideMonitoring_Load(object sender, EventArgs e)
         {
-            
-        }
-           
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void ChangeModPulse_Click(object sender, EventArgs e)
         {
-
+            // sets current module
+            Constants.currentModule = 0;
+            this.Hide();
+            Set_Alarms.SetAlarmsInstance.Show();
+        }
+        // Same for all below
+        private void ChangeModBreathing_Click(object sender, EventArgs e)
+        {
+            Constants.currentModule = 1;
+            this.Hide();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
 
-        private void BreathingText_TextChanged(object sender, EventArgs e)
+        private void ChangeModBlood_Click(object sender, EventArgs e)
         {
-
+            Constants.currentModule = 2;
+            this.Hide();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
 
-        private void Label10_Click(object sender, EventArgs e)
+        private void ChangeModTemp_Click(object sender, EventArgs e)
         {
-
+            Constants.currentModule = 3;
+            this.Hide();
+            Set_Alarms.SetAlarmsInstance.Show();
         }
     }
 }

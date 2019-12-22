@@ -33,10 +33,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ChangeModPulse = new System.Windows.Forms.Button();
+            this.ChangeModBreathing = new System.Windows.Forms.Button();
+            this.ChangeModBlood = new System.Windows.Forms.Button();
+            this.ChangeModTemp = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,8 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.Home = new System.Windows.Forms.Button();
+            this.alarmPic2 = new System.Windows.Forms.PictureBox();
             this.Namelabel = new System.Windows.Forms.Label();
             this.PulseText = new System.Windows.Forms.TextBox();
             this.BreathingText = new System.Windows.Forms.TextBox();
@@ -56,7 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmPic2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +69,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bedside Patient Monitoring";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -79,7 +78,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(127, 274);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -108,42 +106,45 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // button1
+            // ChangeModPulse
             // 
-            this.button1.Location = new System.Drawing.Point(48, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 42);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Change Module";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ChangeModPulse.Location = new System.Drawing.Point(48, 326);
+            this.ChangeModPulse.Name = "ChangeModPulse";
+            this.ChangeModPulse.Size = new System.Drawing.Size(95, 42);
+            this.ChangeModPulse.TabIndex = 5;
+            this.ChangeModPulse.Text = "Change Module";
+            this.ChangeModPulse.UseVisualStyleBackColor = true;
+            this.ChangeModPulse.Click += new System.EventHandler(this.ChangeModPulse_Click);
             // 
-            // button2
+            // ChangeModBreathing
             // 
-            this.button2.Location = new System.Drawing.Point(250, 326);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 42);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Change Module";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ChangeModBreathing.Location = new System.Drawing.Point(250, 326);
+            this.ChangeModBreathing.Name = "ChangeModBreathing";
+            this.ChangeModBreathing.Size = new System.Drawing.Size(95, 42);
+            this.ChangeModBreathing.TabIndex = 6;
+            this.ChangeModBreathing.Text = "Change Module";
+            this.ChangeModBreathing.UseVisualStyleBackColor = true;
+            this.ChangeModBreathing.Click += new System.EventHandler(this.ChangeModBreathing_Click);
             // 
-            // button3
+            // ChangeModBlood
             // 
-            this.button3.Location = new System.Drawing.Point(459, 326);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 42);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Change Module";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ChangeModBlood.Location = new System.Drawing.Point(459, 326);
+            this.ChangeModBlood.Name = "ChangeModBlood";
+            this.ChangeModBlood.Size = new System.Drawing.Size(95, 42);
+            this.ChangeModBlood.TabIndex = 7;
+            this.ChangeModBlood.Text = "Change Module";
+            this.ChangeModBlood.UseVisualStyleBackColor = true;
+            this.ChangeModBlood.Click += new System.EventHandler(this.ChangeModBlood_Click);
             // 
-            // button4
+            // ChangeModTemp
             // 
-            this.button4.Location = new System.Drawing.Point(650, 326);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 42);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Change Module";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ChangeModTemp.Location = new System.Drawing.Point(650, 326);
+            this.ChangeModTemp.Name = "ChangeModTemp";
+            this.ChangeModTemp.Size = new System.Drawing.Size(95, 42);
+            this.ChangeModTemp.TabIndex = 8;
+            this.ChangeModTemp.Text = "Change Module";
+            this.ChangeModTemp.UseVisualStyleBackColor = true;
+            this.ChangeModTemp.Click += new System.EventHandler(this.ChangeModTemp_Click);
             // 
             // label2
             // 
@@ -221,28 +222,27 @@
             this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 16;
             this.label9.Text = "Temperature";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // button5
+            // Home
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(341, 389);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 49);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Home";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home.Location = new System.Drawing.Point(341, 389);
+            this.Home.Name = "Home";
+            this.Home.Size = new System.Drawing.Size(118, 49);
+            this.Home.TabIndex = 17;
+            this.Home.Text = "Home";
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
-            // pictureBox5
+            // alarmPic2
             // 
-            this.pictureBox5.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(719, -1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 76);
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
+            this.alarmPic2.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
+            this.alarmPic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.alarmPic2.Location = new System.Drawing.Point(719, -1);
+            this.alarmPic2.Name = "alarmPic2";
+            this.alarmPic2.Size = new System.Drawing.Size(80, 76);
+            this.alarmPic2.TabIndex = 18;
+            this.alarmPic2.TabStop = false;
             // 
             // Namelabel
             // 
@@ -253,7 +253,6 @@
             this.Namelabel.Size = new System.Drawing.Size(93, 20);
             this.Namelabel.TabIndex = 19;
             this.Namelabel.Text = "John Smith";
-            this.Namelabel.Click += new System.EventHandler(this.Label10_Click);
             // 
             // PulseText
             // 
@@ -261,7 +260,6 @@
             this.PulseText.Name = "PulseText";
             this.PulseText.Size = new System.Drawing.Size(100, 20);
             this.PulseText.TabIndex = 20;
-            this.PulseText.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // BreathingText
             // 
@@ -269,7 +267,6 @@
             this.BreathingText.Name = "BreathingText";
             this.BreathingText.Size = new System.Drawing.Size(100, 20);
             this.BreathingText.TabIndex = 21;
-            this.BreathingText.TextChanged += new System.EventHandler(this.BreathingText_TextChanged);
             // 
             // Bloodtext
             // 
@@ -295,8 +292,8 @@
             this.Controls.Add(this.BreathingText);
             this.Controls.Add(this.PulseText);
             this.Controls.Add(this.Namelabel);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.alarmPic2);
+            this.Controls.Add(this.Home);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -305,10 +302,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ChangeModTemp);
+            this.Controls.Add(this.ChangeModBlood);
+            this.Controls.Add(this.ChangeModBreathing);
+            this.Controls.Add(this.ChangeModPulse);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -321,7 +318,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alarmPic2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,10 +331,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button ChangeModPulse;
+        private System.Windows.Forms.Button ChangeModBreathing;
+        private System.Windows.Forms.Button ChangeModBlood;
+        private System.Windows.Forms.Button ChangeModTemp;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -346,12 +343,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button Home;
         private System.Windows.Forms.Label Namelabel;
         private System.Windows.Forms.TextBox PulseText;
         private System.Windows.Forms.TextBox BreathingText;
         private System.Windows.Forms.TextBox Bloodtext;
         private System.Windows.Forms.TextBox TempText;
+        private System.Windows.Forms.PictureBox alarmPic2;
     }
 }

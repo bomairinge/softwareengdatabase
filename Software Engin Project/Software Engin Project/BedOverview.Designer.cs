@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.Bed1 = new System.Windows.Forms.PictureBox();
+            this.Logs = new System.Windows.Forms.PictureBox();
+            this.AlarmPicBO = new System.Windows.Forms.PictureBox();
+            this.Bed2 = new System.Windows.Forms.PictureBox();
+            this.Bed7 = new System.Windows.Forms.PictureBox();
+            this.Bed8 = new System.Windows.Forms.PictureBox();
+            this.Bed6 = new System.Windows.Forms.PictureBox();
+            this.Bed5 = new System.Windows.Forms.PictureBox();
+            this.Bed4 = new System.Windows.Forms.PictureBox();
+            this.Bed3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,17 +63,17 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.LogoutButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlarmPicBO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,114 +86,114 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bed Overview";
             // 
-            // pictureBox3
+            // Bed1
             // 
-            this.pictureBox3.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 80);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
+            this.Bed1.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed1.Location = new System.Drawing.Point(26, 80);
+            this.Bed1.Name = "Bed1";
+            this.Bed1.Size = new System.Drawing.Size(161, 85);
+            this.Bed1.TabIndex = 5;
+            this.Bed1.TabStop = false;
+            this.Bed1.Click += new System.EventHandler(this.Bed1_Click);
             // 
-            // pictureBox2
+            // Logs
             // 
-            this.pictureBox2.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Padlock;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-4, 351);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(114, 98);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.Logs.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Padlock;
+            this.Logs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logs.Location = new System.Drawing.Point(-4, 351);
+            this.Logs.Name = "Logs";
+            this.Logs.Size = new System.Drawing.Size(114, 98);
+            this.Logs.TabIndex = 4;
+            this.Logs.TabStop = false;
+            this.Logs.Click += new System.EventHandler(this.Logs_Click);
             // 
-            // pictureBox1
+            // AlarmPicBO
             // 
-            this.pictureBox1.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(686, 351);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 98);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.AlarmPicBO.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Alarm_symbol;
+            this.AlarmPicBO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AlarmPicBO.Location = new System.Drawing.Point(686, 351);
+            this.AlarmPicBO.Name = "AlarmPicBO";
+            this.AlarmPicBO.Size = new System.Drawing.Size(114, 98);
+            this.AlarmPicBO.TabIndex = 3;
+            this.AlarmPicBO.TabStop = false;
             // 
-            // pictureBox4
+            // Bed2
             // 
-            this.pictureBox4.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(217, 80);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
+            this.Bed2.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed2.Location = new System.Drawing.Point(217, 80);
+            this.Bed2.Name = "Bed2";
+            this.Bed2.Size = new System.Drawing.Size(161, 85);
+            this.Bed2.TabIndex = 6;
+            this.Bed2.TabStop = false;
+            this.Bed2.Click += new System.EventHandler(this.Bed2_Click);
             // 
-            // pictureBox6
+            // Bed7
             // 
-            this.pictureBox6.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(413, 191);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
+            this.Bed7.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed7.Location = new System.Drawing.Point(413, 191);
+            this.Bed7.Name = "Bed7";
+            this.Bed7.Size = new System.Drawing.Size(161, 85);
+            this.Bed7.TabIndex = 8;
+            this.Bed7.TabStop = false;
+            this.Bed7.Click += new System.EventHandler(this.Bed7_Click);
             // 
-            // pictureBox7
+            // Bed8
             // 
-            this.pictureBox7.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(609, 191);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.PictureBox7_Click);
+            this.Bed8.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed8.Location = new System.Drawing.Point(609, 191);
+            this.Bed8.Name = "Bed8";
+            this.Bed8.Size = new System.Drawing.Size(161, 85);
+            this.Bed8.TabIndex = 9;
+            this.Bed8.TabStop = false;
+            this.Bed8.Click += new System.EventHandler(this.Bed8_Click);
             // 
-            // pictureBox8
+            // Bed6
             // 
-            this.pictureBox8.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(217, 191);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.PictureBox8_Click);
+            this.Bed6.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed6.Location = new System.Drawing.Point(217, 191);
+            this.Bed6.Name = "Bed6";
+            this.Bed6.Size = new System.Drawing.Size(161, 85);
+            this.Bed6.TabIndex = 10;
+            this.Bed6.TabStop = false;
+            this.Bed6.Click += new System.EventHandler(this.Bed6_Click);
             // 
-            // pictureBox9
+            // Bed5
             // 
-            this.pictureBox9.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(26, 191);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox9.TabIndex = 11;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.PictureBox9_Click);
+            this.Bed5.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed5.Location = new System.Drawing.Point(26, 191);
+            this.Bed5.Name = "Bed5";
+            this.Bed5.Size = new System.Drawing.Size(161, 85);
+            this.Bed5.TabIndex = 11;
+            this.Bed5.TabStop = false;
+            this.Bed5.Click += new System.EventHandler(this.Bed5_Click);
             // 
-            // pictureBox10
+            // Bed4
             // 
-            this.pictureBox10.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(609, 80);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox10.TabIndex = 12;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.PictureBox10_Click);
+            this.Bed4.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed4.Location = new System.Drawing.Point(609, 80);
+            this.Bed4.Name = "Bed4";
+            this.Bed4.Size = new System.Drawing.Size(161, 85);
+            this.Bed4.TabIndex = 12;
+            this.Bed4.TabStop = false;
+            this.Bed4.Click += new System.EventHandler(this.Bed4_Click);
             // 
-            // pictureBox11
+            // Bed3
             // 
-            this.pictureBox11.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(413, 80);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(161, 85);
-            this.pictureBox11.TabIndex = 13;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.PictureBox11_Click);
+            this.Bed3.BackgroundImage = global::Software_Engin_Project.Properties.Resources.Bed;
+            this.Bed3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bed3.Location = new System.Drawing.Point(413, 80);
+            this.Bed3.Name = "Bed3";
+            this.Bed3.Size = new System.Drawing.Size(161, 85);
+            this.Bed3.TabIndex = 13;
+            this.Bed3.TabStop = false;
+            this.Bed3.Click += new System.EventHandler(this.Bed3_Click);
             // 
             // label2
             // 
@@ -204,7 +204,6 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Bed 2";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -285,7 +284,6 @@
             this.label10.Size = new System.Drawing.Size(69, 13);
             this.label10.TabIndex = 22;
             this.label10.Text = "Alarm Status:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -437,23 +435,23 @@
             this.label25.TabIndex = 37;
             this.label25.Text = "Fine";
             // 
-            // button5
+            // LogoutButton
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(326, 389);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 49);
-            this.button5.TabIndex = 38;
-            this.button5.Text = "Logout";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutButton.Location = new System.Drawing.Point(326, 389);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(118, 49);
+            this.LogoutButton.TabIndex = 38;
+            this.LogoutButton.Text = "Logout";
+            this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.Button5_Click);
             // 
             // BedOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
@@ -478,30 +476,29 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Bed3);
+            this.Controls.Add(this.Bed4);
+            this.Controls.Add(this.Bed5);
+            this.Controls.Add(this.Bed6);
+            this.Controls.Add(this.Bed8);
+            this.Controls.Add(this.Bed7);
+            this.Controls.Add(this.Bed2);
+            this.Controls.Add(this.Bed1);
+            this.Controls.Add(this.Logs);
+            this.Controls.Add(this.AlarmPicBO);
             this.Controls.Add(this.label1);
             this.Name = "BedOverview";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.BedOverview_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlarmPicBO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bed3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,16 +507,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox AlarmPicBO;
+        private System.Windows.Forms.PictureBox Logs;
+        private System.Windows.Forms.PictureBox Bed1;
+        private System.Windows.Forms.PictureBox Bed2;
+        private System.Windows.Forms.PictureBox Bed7;
+        private System.Windows.Forms.PictureBox Bed8;
+        private System.Windows.Forms.PictureBox Bed6;
+        private System.Windows.Forms.PictureBox Bed5;
+        private System.Windows.Forms.PictureBox Bed4;
+        private System.Windows.Forms.PictureBox Bed3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -544,6 +541,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button LogoutButton;
     }
 }

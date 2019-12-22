@@ -14,7 +14,7 @@ namespace Software_Engin_Project
         private decimal lowerLimit;
         private decimal upperLimit;
         
-        
+        //Constructors for the class
         
         public decimal Lowerlimit
         {
