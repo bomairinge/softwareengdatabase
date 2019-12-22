@@ -223,3 +223,19 @@ G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\
 G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
 G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
 G:\softwareengdatabase-master\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database.mdf
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Bedside_Database_log.ldf
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe.config
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.exe
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\bin\Debug\Software Engin Project.pdb
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csprojAssemblyReference.cache
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedOverview.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.BedsideMonitoring.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Login.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Management.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Properties.Resources.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Set_Alarms.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software_Engin_Project.Testform.resources
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.csproj.GenerateResource.cache
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.exe
+C:\Users\sonic\OneDrive\Documents\GitHub\softwareengdatabase\Software Engin Project\Software Engin Project\obj\Debug\Software Engin Project.pdb
